@@ -21,6 +21,7 @@ try:
             print(15 - count)
             count = count + 1
         print('BYE BYE')
+        shutdown()
 
     #SHUTDOWN the pc function
     def shutdown():
