@@ -25,12 +25,15 @@ try:
 
     #SHUTDOWN the pc function
     def shutdown():
-        os.shutdown(s=0, m=0, h=0)
+        os.system('shutdown /s /t 1')
 
 
 
 
-    threading.Thread(target = music).start()
+
+
+
+        threading.Thread(target = music).start()
     threading.Thread(target =  consol_output).start()
 
 
