@@ -3,6 +3,7 @@ import playsound            #pip install playsound; https://www.delftstack.com/d
 import time                 #https://docs.python.org/3/library/time.html
 import os                   #https://rdrr.io/cran/installr/man/os.shutdown.html
 import threading            #https://docs.python.org/3/library/threading.html
+import win32gui, win32con   #https://www.anycodings.com/1questions/662705/python-console-fullscreen-maybe-using-ossystem
 
 
 
@@ -41,6 +42,9 @@ try:
     #PLAY Outrosoundtrack
     def music():
         playsound.playsound('music.mp3')
+        print('ENJOY')
+        hwnd = win32gui.GetForegroundWindow()
+        win32gui.ShowWindow(hwnd, win32con.SW_MAXIMIZE)
 
 
     #COUNT FROM 15 to 1, than shutdown the pc
