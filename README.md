@@ -4,7 +4,7 @@ Windows Shutdown as a meme
 
 Installation
 
-Download Version2.3.zip
+Download RELEASE/Version2.3.zip
 
 UNZIP VERSION2.3.zip 
 
