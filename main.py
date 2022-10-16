@@ -38,10 +38,6 @@ def showPIL(pilImage):
 
 
 try:
-
-    print("Shutdown PC in:")
-
-
     #PLAY Outrosoundtrack
     def music():
         playsound.playsound('music.mp3')
@@ -52,7 +48,7 @@ try:
         count = 0
         while count < 15:
             time.sleep(1)
-            print(15 - count)
+            print(f'Shutdown PC in: {15 - count}')
             count = count + 1
         print('BYE BYE')
         threading.Thread(target=picture).start()
