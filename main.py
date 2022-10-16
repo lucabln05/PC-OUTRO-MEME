@@ -3,6 +3,7 @@ import playsound            #pip install playsound; https://www.delftstack.com/d
 import time                 #https://docs.python.org/3/library/time.html
 import os                   #https://rdrr.io/cran/installr/man/os.shutdown.html
 import threading            #https://docs.python.org/3/library/threading.html
+from PIL import Image       #https://stackoverflow.com/questions/47316266/can-i-display-image-in-full-screen-mode-with-pil
 
 
 try:
@@ -25,6 +26,9 @@ try:
 
     #SHUTDOWN the pc function
     def shutdown():
+        pilImage = Image.open("colagem3.png")
+        showPIL(pilImage)
+        time.sleep(10)
         os.system('shutdown /s /t 1')
 
     threading.Thread(target = music).start()
