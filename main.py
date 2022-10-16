@@ -50,17 +50,18 @@ try:
             time.sleep(1)
             print(f'Shutdown PC in: {15 - count}')
             count = count + 1
-        print('BYE BYE')
+        time.sleep(0.5)
         threading.Thread(target=picture).start()
         threading.Thread(target=shutdown).start()
 
     #SHUTDOWN the pc function
     def picture():
-        showPIL(Image.open("bluescreen.png"))
+
+        showPIL(Image.open("bluescreen.jpg"))
 
     def shutdown():
         time.sleep(10)
-        os.system('shutdown /s /t 1')
+        os.system('shutdown /s /t 0')
 
     threading.Thread(target = music).start()
     threading.Thread(target =  consol_output).start()
