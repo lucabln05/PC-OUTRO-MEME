@@ -27,13 +27,7 @@ try:
     def shutdown():
         os.system('shutdown /s /t 1')
 
-
-
-
-
-
-
-        threading.Thread(target = music).start()
+    threading.Thread(target = music).start()
     threading.Thread(target =  consol_output).start()
 
 
