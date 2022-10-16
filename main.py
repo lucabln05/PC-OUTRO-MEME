@@ -41,7 +41,7 @@ try:
     #PLAY Outrosoundtrack
     def music():
         playsound.playsound('music.mp3')
-
+        print('ENJOY')
 
     #COUNT FROM 15 to 1, than shutdown the pc
     def consol_output():
